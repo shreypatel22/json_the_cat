@@ -18,7 +18,7 @@ const fetchBreedDescription = (breedName, callback) => {
     if (data[0]) {
       return callback(null, data[0].description);
     } else {
-      return callback('No Cat Found.');
+      return callback('No Cat Found.', null);
     }
 
   });
